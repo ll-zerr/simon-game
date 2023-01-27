@@ -1,4 +1,4 @@
-// alert ("Hello, Welcome to the game!");
+
 const buttonColours = ["red", "blue", "green", "yellow"];
 const gamePattern =[];
 
@@ -9,6 +9,7 @@ function nextSequence () {
   console.log(randomChosenColour);
   gamePattern.push(randomChosenColour);
   console.log(gamePattern);
+  $("#"+randomChosenColour).fadeIn(100).fadeOut(100).fadeIn(100);
+  const audio = new Audio(`sounds/${randomChosenColour}.mp3`);
+  audio.play();
 };
-
-// nextSequence();
