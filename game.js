@@ -2,8 +2,23 @@
 const buttonColours = ["red", "blue", "green", "yellow"];
 const gamePattern =[];
 const userClickedPattern =[];
+let started = false;
+let level = 0;
+
+// start the game
+$(document).keydown(function (event) {
+  // console.log(event.key);
+if (!started) {
+  $("#level-title").text("Level " + level);
+    nextSequence();
+    started = true;
+  }
+});
+
 
 function nextSequence () {
+  level++;
+  $("#level-title").text("Level " + level);
   let randomNumber = Math.floor(Math.random() * 4);
   // console.log(randomNumber);
   let randomChosenColour = buttonColours[randomNumber];
