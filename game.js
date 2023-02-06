@@ -1,5 +1,5 @@
 const buttonColours = ["red", "blue", "green", "yellow"];
-const gamePattern = [];
+let gamePattern = [];
 let userClickedPattern = [];
 let started = false;
 let level = 0;
@@ -24,7 +24,7 @@ function nextSequence() {
   let randomChosenColour = buttonColours[randomNumber];
   // console.log(randomChosenColour);
   gamePattern.push(randomChosenColour);
-  console.log(gamePattern);
+  // console.log(gamePattern);
   $("#" + randomChosenColour).fadeIn(100).fadeOut(100).fadeIn(100);
   playSound(randomChosenColour);
 };
@@ -34,7 +34,7 @@ $(".btn").click(function() {
   const userChosenColour = this.id;
   // console.log(userChosenColour);
   userClickedPattern.push(userChosenColour);
-  console.log(userClickedPattern);
+  // console.log(userClickedPattern);
   playSound(userChosenColour);
   animatePress(userChosenColour);
   checkAnswer(userClickedPattern.length - 1);
@@ -63,5 +63,19 @@ function checkAnswer(currentLevel) {
     }
   } else {
     console.log("wrong");
+    playSound("wrong");
+    $("#level-title").text("Game Over, Press Any Key to Restart");
+    $("body").addClass("game-over");
+    setTimeout (function() {
+      $("body").removeClass("game-over");
+    }, 200);
+    startOver();
   }
+};
+
+// start the game again
+function startOver() {
+  level = 0;
+  gamePattern = [];
+  started = false;
 };
