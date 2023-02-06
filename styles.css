@@ -10,6 +10,17 @@ body {
   color: #FEF2BF;
 }
 
+#start {
+  height: 100px;
+  width: 300px;
+  border: 5px solid #ffffff;
+  background-color: #000000;
+  border-radius: 12px;
+  font-family: 'Press Start 2P', cursive;
+  color: #ffffff;
+  font-size: 2.5rem;
+}
+
 .container {
   display: block;
   width: 50%;
@@ -50,4 +61,8 @@ body {
 .pressed {
   box-shadow: 0 0 20px white;
   background-color: grey;
+}
+
+.hidden {
+  display:none;
 }
