@@ -24,6 +24,6 @@ Similar to the game you may have played as a kid. Copy the pattern of buttons to
 
 ## Acknowledgements
 
-Project Idea: Dr. Angela Yu [The Complete 2023 Web Development Bootcamp - Udemy course](https://www.udemy.com/course/the-complete-web-development-bootcamp/?src=sac&kw=the+Complete+2023)
+Project Idea: Dr. Angela Yu, [The Complete 2023 Web Development Bootcamp - Udemy course](https://www.udemy.com/course/the-complete-web-development-bootcamp/?src=sac&kw=the+Complete+2023)
 
-Original HTML, CSS & Sounds provided by: Dr. Angela Yu [The Complete 2023 Web Development Bootcamp - Udemy course](https://www.udemy.com/course/the-complete-web-development-bootcamp/?src=sac&kw=the+Complete+2023)
+Original HTML, CSS & Sounds provided by: Dr. Angela Yu, [The Complete 2023 Web Development Bootcamp - Udemy course](https://www.udemy.com/course/the-complete-web-development-bootcamp/?src=sac&kw=the+Complete+2023)
